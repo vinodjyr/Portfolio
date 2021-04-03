@@ -1,0 +1,401 @@
+body {                          /*couleur de fond */
+   background-color: black;
+}
+h1 {                    /*titre de la section présentation*/
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
+
+.bg{               /*image d'accueil*/
+    width: 100%;
+    height: auto;
+}
+
+
+.presentation {         /*section présentation*/
+    display: flex;
+    align-items: center;
+    
+    
+}
+.profile {         /*avatar*/
+    padding: 2%;
+    width: 40%;
+    height: auto;
+    float: left;
+    
+}
+
+#para_pres {                /* paragraphe de la présenation*/
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 150%;
+    padding: 1%;
+}
+
+#sec_comp {
+    background-color: white;
+}
+
+.comp {
+    color: black
+}
+.competences {
+    display: flex;
+    flex-direction: row;
+}
+
+#webdev > h4{
+    text-align: center;
+    font-size:110%;
+}
+
+#webdev{
+    border: 2px solid black;
+    border-radius: 15%;
+    margin-left: 0.5%;
+    
+}
+
+#python > h4{
+    text-align: center;
+    font-size:110%;
+}
+
+
+
+#python{
+    border: 2px solid black;
+    border-radius: 15%;
+    margin-left: 0.5%;
+}
+
+#database > h4{
+    text-align: center;
+    font-size:110%;
+    
+}
+
+#database{
+    border: 2px solid black;
+    border-radius: 15%;
+    margin-left: 0.5%;
+    
+}
+
+#java > h4{
+    text-align: center;
+    font-size:110%;
+}
+
+#java{
+    border: 2px solid black;
+    border-radius: 15%;
+    margin-left: 0.5%;
+
+}
+
+#webdev:hover{
+    background-color: black;
+    color: white;
+    transition: 800ms;
+}
+
+#python:hover{
+    background-color: black;
+    color: white;
+    transition: 800ms;
+}
+
+#database:hover{
+    background-color: black;
+    color: white;
+    transition: 800ms;
+}
+
+#java:hover{
+    background-color: black;
+    color: white;
+    transition: 800ms;
+}
+
+.h2_comp {
+    text-align: center;
+}
+
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+    content:  attr(data-skill);
+    background-color: #2A5AD5;
+    border-radius: 100p;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+  
+.bar.intermediate::before{
+    background-color: rgb(11, 122, 122);
+    width: calc(80% - 10px);
+}
+
+.bar.intermediate-ad::before{
+    background-color: rgb(11, 122, 122);
+    width: calc(85% - 10px);
+}
+
+.linux.bar.intermediate-ad::before{
+    background-color: rgb(146, 148, 11);
+    width: calc(85% - 10px);
+}
+
+.Windows.bar.advanced::before{
+    background-color: rgb(37, 128, 170);
+    width: calc(90% - 10px);
+}
+
+.Java.bar.advanced::before{
+    background-color: rgb(163, 125, 19);
+    width: calc(90% - 10px);
+}
+
+.PHP.bar.intermediate-ad::before{
+    background-color: rgb(11, 78, 122);
+    width: calc(85% - 10px);
+}
+
+.C.bar.intermediate::before{
+    background-color: rgb(16, 172, 151);
+    width: calc(80% - 10px);
+}
+
+.MySQL.bar.intermediate-ad::before{
+    background-color: rgb(16, 76, 172);
+    width: calc(85% - 10px);
+}
+
+.Bash.bar.intermediate::before{
+    background-color: rgb(144, 74, 17);
+    width: calc(80% - 10px);
+}
+
+.Python.bar.advanced::before{
+    background-color: rgb(173, 171, 14);
+    width: calc(90% - 10px);
+}
+
+.HTML.bar.advanced::before{
+    background-color: rgb(155, 33, 11);
+    width: calc(90% - 10px);
+}
+
+.CSS.bar.intermediate::before{
+    background-color: rgb(8, 61, 110);
+    width: calc(80% - 10px);
+}
+
+.bar.advanced::before{
+    background-color: rgb(38, 104, 8);
+    width: calc(90% - 10px);
+}
+
+.h2_sys {
+    text-align: center;
+}
+
+.projet_site_sys {         /*section réalisation*/
+    display: flex;
+    align-items: center;
+  
+}
+
+.img_site {                 /*image du site*/
+    padding: 3%;
+    width: 50%;
+    height: auto;
+    float: left;
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.img_site:hover {               /*animation de l'image*/
+    -webkit-transform: rotate(-15deg) scale(1.4);
+    transform: rotate(-15deg) scale(1.4);
+    padding: 10%;
+}
+
+#des_site {
+    padding: 10%;
+    color: white;
+}
+
+.projet_python {         
+    display: flex;
+    align-items: center;
+  
+}
+.img_projet_python {                /*image du projet python*/
+    padding: 3%;
+    width: 50%;
+    height: auto;
+    float: right;
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.img_projet_python:hover {              /*animation de l'image*/
+    -webkit-transform: rotate(-15deg) scale(1.4);
+    transform: rotate(-15deg) scale(1.4);
+    padding: 10%;
+}
+
+#des_python {                   /*description du projet python*/
+    color: white;
+    padding: 15%;
+}
+
+.img_projet_tuto {                /*image du projet python*/
+    padding: 3%;
+    width: 50%;
+    height: auto;
+    float: left;
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.img_projet_tuto:hover {              /*animation de l'image*/
+    -webkit-transform: rotate(-15deg) scale(1.4);
+    transform: rotate(-15deg) scale(1.4);
+    padding: 10%;
+}
+
+#projet-tuto{
+    color: white;
+    padding: 11%;
+}
+
+#sec_contact {                  /*couleur du fond section contact*/
+    background-color: white;
+} 
+
+.h1_contact {
+    color: black;
+}
+
+
+#contact_id {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15%;
+
+}
+/*-------------------------------------FORMULAIRE-----------------------------------------------*/
+form {
+    color: white;
+    background-color: black;
+    float: right;
+    padding: 8%;
+    margin-right: 12%;
+    border-radius: 20px;
+}
+
+label {
+    margin-left: -10%;
+    padding: 5%;
+    left: 50%;
+}
+
+input {
+    margin-left: -10%;
+    border-radius: 20px;
+    width: 120%;
+}
+
+#submit {
+    margin-left: 25%;
+    margin-top: 15%;
+    width: 50%;
+    
+}
+/*------------------------------------------------------------------------------------*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+/*-------------------------------------code pour rendre le site responsive-----------------------------------------------*/
+
+@media screen and (max-width:1200px){
+    #contact_id {
+        font-size: medium;
+        text-align: center;
+        padding: 15%;
+        margin-left: 10%;
+    }
+    form {
+        padding: 20%;
+    }
+    
+}
+@media screen and (max-width:650px) {
+    
+    #para_pres {
+        font-size:small ;
+    }
+    
+    .competences {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #contact_id {
+        font-size: medium;
+        text-align: center;
+        padding: 5%;
+        margin-left: 16%;
+    }
+    form {
+        padding: 20%;
+    }
+}
+/*------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
